@@ -1,0 +1,21 @@
+---
+title: "Airquality Linear Regression"
+output: html_document
+---
+# Summary
+
+```{r,echo "# example1" >> README.md} 
+
+model<-lm(airquality$Ozone~airquality$Wind)
+summary(model)
+
+```
+## Including Plots
+```{r,echo=FALSE}
+
+plot(airquality$Wind,airquality$Ozone)
+abline(model)
+```
+
+
+
